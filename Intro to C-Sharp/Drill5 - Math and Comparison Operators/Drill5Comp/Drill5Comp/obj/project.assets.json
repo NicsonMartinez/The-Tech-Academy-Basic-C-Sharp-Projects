@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nicson Martinez\\Documents\\GitHub\\The-Tech-Academy-Basic-C-Sharp-Projects\\Intro to C-Sharp\\Drill5 - Math and Comparison Operations\\Drill5Comp\\Drill5Comp\\Drill5Comp.csproj",
+      "projectUniqueName": "C:\\Users\\Nicson Martinez\\Documents\\GitHub\\The-Tech-Academy-Basic-C-Sharp-Projects\\Intro to C-Sharp\\Drill5 - Math and Comparison Operators\\Drill5Comp\\Drill5Comp\\Drill5Comp.csproj",
       "projectName": "Drill5Comp",
-      "projectPath": "C:\\Users\\Nicson Martinez\\Documents\\GitHub\\The-Tech-Academy-Basic-C-Sharp-Projects\\Intro to C-Sharp\\Drill5 - Math and Comparison Operations\\Drill5Comp\\Drill5Comp\\Drill5Comp.csproj",
+      "projectPath": "C:\\Users\\Nicson Martinez\\Documents\\GitHub\\The-Tech-Academy-Basic-C-Sharp-Projects\\Intro to C-Sharp\\Drill5 - Math and Comparison Operators\\Drill5Comp\\Drill5Comp\\Drill5Comp.csproj",
       "packagesPath": "C:\\Users\\Nicson Martinez\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nicson Martinez\\Documents\\GitHub\\The-Tech-Academy-Basic-C-Sharp-Projects\\Intro to C-Sharp\\Drill5 - Math and Comparison Operations\\Drill5Comp\\Drill5Comp\\obj\\",
+      "outputPath": "C:\\Users\\Nicson Martinez\\Documents\\GitHub\\The-Tech-Academy-Basic-C-Sharp-Projects\\Intro to C-Sharp\\Drill5 - Math and Comparison Operators\\Drill5Comp\\Drill5Comp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
