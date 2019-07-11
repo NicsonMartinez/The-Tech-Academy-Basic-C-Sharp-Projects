@@ -1,0 +1,11 @@
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill4 - Math and Comparison Operations\MathBoolOp\MathBoolOp\bin\Debug\netcoreapp2.1\MathBoolOp.deps.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill4 - Math and Comparison Operations\MathBoolOp\MathBoolOp\bin\Debug\netcoreapp2.1\MathBoolOp.runtimeconfig.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill4 - Math and Comparison Operations\MathBoolOp\MathBoolOp\bin\Debug\netcoreapp2.1\MathBoolOp.runtimeconfig.dev.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill4 - Math and Comparison Operations\MathBoolOp\MathBoolOp\bin\Debug\netcoreapp2.1\MathBoolOp.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill4 - Math and Comparison Operations\MathBoolOp\MathBoolOp\bin\Debug\netcoreapp2.1\MathBoolOp.pdb
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill4 - Math and Comparison Operations\MathBoolOp\MathBoolOp\obj\Debug\netcoreapp2.1\MathBoolOp.csprojAssemblyReference.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill4 - Math and Comparison Operations\MathBoolOp\MathBoolOp\obj\Debug\netcoreapp2.1\MathBoolOp.csproj.CoreCompileInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill4 - Math and Comparison Operations\MathBoolOp\MathBoolOp\obj\Debug\netcoreapp2.1\MathBoolOp.AssemblyInfoInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill4 - Math and Comparison Operations\MathBoolOp\MathBoolOp\obj\Debug\netcoreapp2.1\MathBoolOp.AssemblyInfo.cs
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill4 - Math and Comparison Operations\MathBoolOp\MathBoolOp\obj\Debug\netcoreapp2.1\MathBoolOp.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill4 - Math and Comparison Operations\MathBoolOp\MathBoolOp\obj\Debug\netcoreapp2.1\MathBoolOp.pdb
