@@ -1,0 +1,11 @@
+C:\Users\Nicson Martinez\source\repos\MathAndComparisonOperators\MathAndComparisonOperators\bin\Debug\netcoreapp2.1\MathAndComparisonOperators.deps.json
+C:\Users\Nicson Martinez\source\repos\MathAndComparisonOperators\MathAndComparisonOperators\bin\Debug\netcoreapp2.1\MathAndComparisonOperators.runtimeconfig.json
+C:\Users\Nicson Martinez\source\repos\MathAndComparisonOperators\MathAndComparisonOperators\bin\Debug\netcoreapp2.1\MathAndComparisonOperators.runtimeconfig.dev.json
+C:\Users\Nicson Martinez\source\repos\MathAndComparisonOperators\MathAndComparisonOperators\bin\Debug\netcoreapp2.1\MathAndComparisonOperators.dll
+C:\Users\Nicson Martinez\source\repos\MathAndComparisonOperators\MathAndComparisonOperators\bin\Debug\netcoreapp2.1\MathAndComparisonOperators.pdb
+C:\Users\Nicson Martinez\source\repos\MathAndComparisonOperators\MathAndComparisonOperators\obj\Debug\netcoreapp2.1\MathAndComparisonOperators.csprojAssemblyReference.cache
+C:\Users\Nicson Martinez\source\repos\MathAndComparisonOperators\MathAndComparisonOperators\obj\Debug\netcoreapp2.1\MathAndComparisonOperators.csproj.CoreCompileInputs.cache
+C:\Users\Nicson Martinez\source\repos\MathAndComparisonOperators\MathAndComparisonOperators\obj\Debug\netcoreapp2.1\MathAndComparisonOperators.AssemblyInfoInputs.cache
+C:\Users\Nicson Martinez\source\repos\MathAndComparisonOperators\MathAndComparisonOperators\obj\Debug\netcoreapp2.1\MathAndComparisonOperators.AssemblyInfo.cs
+C:\Users\Nicson Martinez\source\repos\MathAndComparisonOperators\MathAndComparisonOperators\obj\Debug\netcoreapp2.1\MathAndComparisonOperators.dll
+C:\Users\Nicson Martinez\source\repos\MathAndComparisonOperators\MathAndComparisonOperators\obj\Debug\netcoreapp2.1\MathAndComparisonOperators.pdb
