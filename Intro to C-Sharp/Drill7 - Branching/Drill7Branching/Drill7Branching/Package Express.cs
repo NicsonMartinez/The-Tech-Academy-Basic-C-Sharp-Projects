@@ -63,7 +63,7 @@ namespace Drill7Branching
                 if (userPackageDimention < 50)
                 {
                     decimal quote = (userPackageDimention * userPackageWeight) / 100;
-                    //NOTE: I went here to learn about string formatting 'quote.ToString("#,##0.00") 'https://docs.microsoft.com/en-us/dotnet/standard/base-types/formatting-types
+                    //NOTE: I went here to learn about string formatting 'quote.ToString("#,##0.00") https://docs.microsoft.com/en-us/dotnet/standard/base-types/formatting-types
                     Console.WriteLine("Your estimated total for shipping this package is: $" + quote.ToString("#,##0.00"));
                     Console.WriteLine("Thank You.");
                     Console.ReadLine();
