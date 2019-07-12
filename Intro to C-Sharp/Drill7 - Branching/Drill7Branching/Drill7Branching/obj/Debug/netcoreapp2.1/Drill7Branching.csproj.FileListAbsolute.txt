@@ -1,0 +1,11 @@
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill7 - Branching\Drill7Branching\Drill7Branching\bin\Debug\netcoreapp2.1\Drill7Branching.deps.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill7 - Branching\Drill7Branching\Drill7Branching\bin\Debug\netcoreapp2.1\Drill7Branching.runtimeconfig.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill7 - Branching\Drill7Branching\Drill7Branching\bin\Debug\netcoreapp2.1\Drill7Branching.runtimeconfig.dev.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill7 - Branching\Drill7Branching\Drill7Branching\bin\Debug\netcoreapp2.1\Drill7Branching.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill7 - Branching\Drill7Branching\Drill7Branching\bin\Debug\netcoreapp2.1\Drill7Branching.pdb
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill7 - Branching\Drill7Branching\Drill7Branching\obj\Debug\netcoreapp2.1\Drill7Branching.csprojAssemblyReference.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill7 - Branching\Drill7Branching\Drill7Branching\obj\Debug\netcoreapp2.1\Drill7Branching.csproj.CoreCompileInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill7 - Branching\Drill7Branching\Drill7Branching\obj\Debug\netcoreapp2.1\Drill7Branching.AssemblyInfoInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill7 - Branching\Drill7Branching\Drill7Branching\obj\Debug\netcoreapp2.1\Drill7Branching.AssemblyInfo.cs
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill7 - Branching\Drill7Branching\Drill7Branching\obj\Debug\netcoreapp2.1\Drill7Branching.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill7 - Branching\Drill7Branching\Drill7Branching\obj\Debug\netcoreapp2.1\Drill7Branching.pdb
