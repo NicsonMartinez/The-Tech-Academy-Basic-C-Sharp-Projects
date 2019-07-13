@@ -66,7 +66,7 @@ namespace Drill8Loops
                     }
                     catch (FormatException)
                     {
-                        Console.WriteLine("Error: Your enry was invalid, please enter an integer.");
+                        Console.WriteLine("Error: Your entry was invalid, please enter an integer.");
 
                         //By setting 'isStart' to true,  I am making the program stay in the loop thus asking the user to enter an integer again.
                         isStart = true;
