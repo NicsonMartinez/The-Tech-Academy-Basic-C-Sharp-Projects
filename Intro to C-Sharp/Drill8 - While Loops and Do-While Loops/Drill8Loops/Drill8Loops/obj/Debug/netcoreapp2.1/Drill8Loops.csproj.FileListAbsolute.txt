@@ -1,0 +1,11 @@
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill8 - While Loops and Do-While Loops\Drill8Loops\Drill8Loops\bin\Debug\netcoreapp2.1\Drill8Loops.deps.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill8 - While Loops and Do-While Loops\Drill8Loops\Drill8Loops\bin\Debug\netcoreapp2.1\Drill8Loops.runtimeconfig.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill8 - While Loops and Do-While Loops\Drill8Loops\Drill8Loops\bin\Debug\netcoreapp2.1\Drill8Loops.runtimeconfig.dev.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill8 - While Loops and Do-While Loops\Drill8Loops\Drill8Loops\bin\Debug\netcoreapp2.1\Drill8Loops.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill8 - While Loops and Do-While Loops\Drill8Loops\Drill8Loops\bin\Debug\netcoreapp2.1\Drill8Loops.pdb
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill8 - While Loops and Do-While Loops\Drill8Loops\Drill8Loops\obj\Debug\netcoreapp2.1\Drill8Loops.csprojAssemblyReference.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill8 - While Loops and Do-While Loops\Drill8Loops\Drill8Loops\obj\Debug\netcoreapp2.1\Drill8Loops.csproj.CoreCompileInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill8 - While Loops and Do-While Loops\Drill8Loops\Drill8Loops\obj\Debug\netcoreapp2.1\Drill8Loops.AssemblyInfoInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill8 - While Loops and Do-While Loops\Drill8Loops\Drill8Loops\obj\Debug\netcoreapp2.1\Drill8Loops.AssemblyInfo.cs
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill8 - While Loops and Do-While Loops\Drill8Loops\Drill8Loops\obj\Debug\netcoreapp2.1\Drill8Loops.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill8 - While Loops and Do-While Loops\Drill8Loops\Drill8Loops\obj\Debug\netcoreapp2.1\Drill8Loops.pdb
