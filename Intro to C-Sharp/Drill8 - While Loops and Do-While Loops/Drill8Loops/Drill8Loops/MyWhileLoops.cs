@@ -21,7 +21,9 @@ namespace Drill8Loops
             string programState = Console.ReadLine();
 
             //I only initialized this variable 'isStart', and didn't assign it a value because it will get reassigned 
-            //below right away in the line that says 'isStart = programState == "start"';
+            //below right away in the line that says 'isStart = programState == "start"'. 'isStart' needs to be outside the
+            //the do-while loop becuase whether it is 'true' or 'false' it needs to be accessed by the 'while (isStart);' line
+            // at the very bottom of the program (which is also 'outside' of  the do part of the whiles loop);
             bool isStart; 
 
             //This starts my Do-While loop.
@@ -36,7 +38,7 @@ namespace Drill8Loops
                     try
                     {
                         Console.WriteLine("This is The Count Down Program!");
-                        Console.WriteLine("Please eneter an integer greater than zero so we can do a count down: ");
+                        Console.WriteLine("Please enter an integer greater than zero so we can do a count down: ");
                         int userNum = Convert.ToInt32(Console.ReadLine());
 
                         bool isHigherThanZero = userNum > 0;
@@ -74,7 +76,7 @@ namespace Drill8Loops
                 }
                 else
                 {
-                    //This is done if the user wants to stp the program.
+                    //This is done if the user wants to stop the program.
                     if (programState == "stop")
                     {
                         Console.WriteLine("The program was stopped. Thank You!");
