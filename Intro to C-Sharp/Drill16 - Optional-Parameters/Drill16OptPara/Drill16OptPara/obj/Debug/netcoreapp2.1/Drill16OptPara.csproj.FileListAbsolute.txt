@@ -1,0 +1,11 @@
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill16 - Optional-Parameters\Drill16OptPara\Drill16OptPara\bin\Debug\netcoreapp2.1\Drill16OptPara.deps.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill16 - Optional-Parameters\Drill16OptPara\Drill16OptPara\bin\Debug\netcoreapp2.1\Drill16OptPara.runtimeconfig.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill16 - Optional-Parameters\Drill16OptPara\Drill16OptPara\bin\Debug\netcoreapp2.1\Drill16OptPara.runtimeconfig.dev.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill16 - Optional-Parameters\Drill16OptPara\Drill16OptPara\bin\Debug\netcoreapp2.1\Drill16OptPara.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill16 - Optional-Parameters\Drill16OptPara\Drill16OptPara\bin\Debug\netcoreapp2.1\Drill16OptPara.pdb
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill16 - Optional-Parameters\Drill16OptPara\Drill16OptPara\obj\Debug\netcoreapp2.1\Drill16OptPara.csprojAssemblyReference.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill16 - Optional-Parameters\Drill16OptPara\Drill16OptPara\obj\Debug\netcoreapp2.1\Drill16OptPara.csproj.CoreCompileInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill16 - Optional-Parameters\Drill16OptPara\Drill16OptPara\obj\Debug\netcoreapp2.1\Drill16OptPara.AssemblyInfoInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill16 - Optional-Parameters\Drill16OptPara\Drill16OptPara\obj\Debug\netcoreapp2.1\Drill16OptPara.AssemblyInfo.cs
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill16 - Optional-Parameters\Drill16OptPara\Drill16OptPara\obj\Debug\netcoreapp2.1\Drill16OptPara.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill16 - Optional-Parameters\Drill16OptPara\Drill16OptPara\obj\Debug\netcoreapp2.1\Drill16OptPara.pdb
