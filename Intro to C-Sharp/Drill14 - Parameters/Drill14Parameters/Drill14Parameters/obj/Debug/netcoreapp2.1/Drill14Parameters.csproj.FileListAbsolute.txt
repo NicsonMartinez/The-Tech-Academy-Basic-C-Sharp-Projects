@@ -1,0 +1,11 @@
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill14 - Parameters\Drill14Parameters\Drill14Parameters\bin\Debug\netcoreapp2.1\Drill14Parameters.deps.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill14 - Parameters\Drill14Parameters\Drill14Parameters\bin\Debug\netcoreapp2.1\Drill14Parameters.runtimeconfig.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill14 - Parameters\Drill14Parameters\Drill14Parameters\bin\Debug\netcoreapp2.1\Drill14Parameters.runtimeconfig.dev.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill14 - Parameters\Drill14Parameters\Drill14Parameters\bin\Debug\netcoreapp2.1\Drill14Parameters.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill14 - Parameters\Drill14Parameters\Drill14Parameters\bin\Debug\netcoreapp2.1\Drill14Parameters.pdb
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill14 - Parameters\Drill14Parameters\Drill14Parameters\obj\Debug\netcoreapp2.1\Drill14Parameters.csprojAssemblyReference.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill14 - Parameters\Drill14Parameters\Drill14Parameters\obj\Debug\netcoreapp2.1\Drill14Parameters.csproj.CoreCompileInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill14 - Parameters\Drill14Parameters\Drill14Parameters\obj\Debug\netcoreapp2.1\Drill14Parameters.AssemblyInfoInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill14 - Parameters\Drill14Parameters\Drill14Parameters\obj\Debug\netcoreapp2.1\Drill14Parameters.AssemblyInfo.cs
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill14 - Parameters\Drill14Parameters\Drill14Parameters\obj\Debug\netcoreapp2.1\Drill14Parameters.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill14 - Parameters\Drill14Parameters\Drill14Parameters\obj\Debug\netcoreapp2.1\Drill14Parameters.pdb
