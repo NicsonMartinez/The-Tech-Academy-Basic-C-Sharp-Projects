@@ -20,11 +20,11 @@ namespace TwentyOne
         {
             Deck deck = new Deck();
 
-            //NOTE: Here now we are able to shuffle a deck 3 times.
-            //NOTE: Another trick in  C# to learn is, you can use something called a 'named parameter'. Which would change
-            //	    'deck = Shuffle(deck, 3);' to 'deck = Shuffle(deck: deck, times: 3);'. It doesn't male a difference on the
-            //	    code but it makes it better in terms of readability.
-            deck = Shuffle(deck: deck, times: 3);
+            //NOTE: What we added here on the 'Shuffle method call below, is what is called an 'out parameter'.
+            //      This out parameter is a value that gets calculated in the method, and can be used outsed of the method,
+            //      but it is Not the return value.
+            int timesShuffled = 0;
+            deck = Shuffle(deck, out timesShuffled, 3 );
 
             foreach (Card card in deck.Cards)
             {
@@ -32,21 +32,24 @@ namespace TwentyOne
             }
 
             Console.WriteLine(deck.Cards.Count);
+            Console.WriteLine("Times shuffled {0}", timesShuffled);
 
             Console.ReadLine();
         }
 
-        //NOTE: below we changed the original Shuffle method, 'public static Deck Shuffle(Deck deck)', to say
-        //	'public static Deck Shuffle(Deck deck, int times = 1)'. When you assign a parameter a default value
-        //	like we did below, if the user doesn't assign how many times to shuffle the deck, it will shuffle 
-        //	one time by default.
-        //NOTE: We also moved the code inside a for loop to make this change functional.
-        //NOTE: This is how you create an optional parameter.
-        public static Deck Shuffle(Deck deck, int times = 1)
-        {
 
+        //NOTE: Here we updated the 'Shuffle' method again, by adding whats called an 'out parameter'. They must go before 
+        //      any 'optional parameters' and they are initialized in the parameter.
+        //NOTE: We changed, 'public static Deck Shuffle(Deck deck, int times = 1)' to 
+        //      'public static Deck Shuffle(Deck deck, out int timesShuffled, int times = 1').
+        //NOTE: What int 'timeShuffled' is designed to keep track of the amount of times a card was shiffled. All we had to do
+        //      is add one to that it in the for loop where the shiffling takes place.
+        public static Deck Shuffle(Deck deck, out int timesShuffled, int times = 1)
+        {
+            timesShuffled = 0;
             for (int i = 0; i < times; i++)
             {
+                timesShuffled++;
                 List<Card> TempList = new List<Card>();
                 Random random = new Random();
                 while (deck.Cards.Count > 0)
@@ -60,8 +63,62 @@ namespace TwentyOne
             }
             return deck;
         }
-        //NOTE: By creating a method with an optional parameter, there would be no need of overloading methods.
-        //	Optional parameters may be convenient for soma occations, but if youu have a lot of optional
-        //	parameters, then things will start to get messy, so overloading methods may make more sense to do.
     }
 }
+/*NOTE:
+OUTPUT:
+Five of Spades
+Six of Diamonds
+Five of Diamonds
+Eight of Clubs
+Three of Clubs
+Nine of Hearts
+Ace of Spades
+Ten of Diamonds
+Nine of Spades
+Ten of Clubs
+Five of Clubs
+seven of Hearts
+Four of Hearts
+Ace of Diamonds
+King of Diamonds
+Six of Clubs
+Three of Spades
+Six of Spades
+seven of Clubs
+seven of Diamonds
+King of Clubs
+Jack of Clubs
+Ten of Hearts
+Nine of Clubs
+Queen of Spades
+Queen of Diamonds
+Four of Clubs
+Ace of Hearts
+Ace of Clubs
+seven of Spades
+Two of Hearts
+Jack of Hearts
+King of Spades
+Queen of Hearts
+Six of Hearts
+King of Hearts
+Jack of Diamonds
+Five of Hearts
+Two of Diamonds
+Two of Clubs
+Two of Spades
+Three of Hearts
+Nine of Diamonds
+Jack of Spades
+Three of Diamonds
+Eight of Spades
+Eight of Hearts
+Ten of Spades
+Eight of Diamonds
+Four of Diamonds
+Queen of Clubs
+Four of Spades
+52
+Times shuffled 3 
+*/
