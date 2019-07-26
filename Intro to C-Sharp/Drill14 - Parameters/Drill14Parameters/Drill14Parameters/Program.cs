@@ -25,7 +25,7 @@ namespace Drill14Parameters
             int valueTwo = 10;
 
             //'DoSomething will multiply add 5 + 100 in the background and will write '10' to the console..
-            ParameterTest.DoSomething(intOne: valueOne, intTwo: valueTwo);
+            test.DoSomething(intOne: valueOne, intTwo: valueTwo);
             Console.ReadLine();
         }
     }
