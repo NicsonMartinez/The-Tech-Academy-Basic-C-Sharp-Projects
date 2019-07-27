@@ -3,7 +3,6 @@ THE TECH ACADEMY PROGRAM
 - This Program represents a game known as 'TwentyOne' aka BlackJack.
 - This games have aspects of it that demonstrates very well every basic feature in C#
 - The end result won't be a perfect program by any means but it will be a good model of the important part of C#.
-
  */
 using System;
 using System.Collections.Generic;
@@ -20,105 +19,76 @@ namespace TwentyOne
         {
             Deck deck = new Deck();
 
-            //NOTE: What we added here on the 'Shuffle method call below, is what is called an 'out parameter'.
-            //      This out parameter is a value that gets calculated in the method, and can be used outsed of the method,
-            //      but it is Not the return value.
-            int timesShuffled = 0;
-            deck = Shuffle(deck, out timesShuffled, 3 );
+            //NOTE: The 'Shuffle' method was moved from the this class, to the 'Deck' class becuase in OOP objects
+            //      have a state and behaviors, and we can consider shuffle a behavior of a deck object.
+            //NOTE: Since we removed the 'Shuffle' method to the Deck class (and made changes to that method), now we are 
+            //      able to call the 'Shuffle' method from a deck object and optionally pass in a parameter an int
+            //      telling the method how many times we are shuffling the deck.
+            deck.Shuffle(3);
 
             foreach (Card card in deck.Cards)
             {
                 Console.WriteLine(card.Face + " of " + card.Suit);
             }
-
             Console.WriteLine(deck.Cards.Count);
-            Console.WriteLine("Times shuffled {0}", timesShuffled);
-
             Console.ReadLine();
         }
 
-
-        //NOTE: Here we updated the 'Shuffle' method again, by adding whats called an 'out parameter'. They must go before 
-        //      any 'optional parameters' and they are initialized in the parameter.
-        //NOTE: We changed, 'public static Deck Shuffle(Deck deck, int times = 1)' to 
-        //      'public static Deck Shuffle(Deck deck, out int timesShuffled, int times = 1').
-        //NOTE: What int 'timeShuffled' is designed to keep track of the amount of times a card was shiffled. All we had to do
-        //      is add one to that it in the for loop where the shiffling takes place.
-        public static Deck Shuffle(Deck deck, out int timesShuffled, int times = 1)
-        {
-            timesShuffled = 0;
-            for (int i = 0; i < times; i++)
-            {
-                timesShuffled++;
-                List<Card> TempList = new List<Card>();
-                Random random = new Random();
-                while (deck.Cards.Count > 0)
-
-                {
-                    int randomIndex = random.Next(0, deck.Cards.Count);
-                    TempList.Add(deck.Cards[randomIndex]);
-                    deck.Cards.RemoveAt(randomIndex);
-                }
-                deck.Cards = TempList;
-            }
-            return deck;
-        }
     }
 }
 /*NOTE:
 OUTPUT:
-Five of Spades
-Six of Diamonds
-Five of Diamonds
-Eight of Clubs
-Three of Clubs
-Nine of Hearts
-Ace of Spades
-Ten of Diamonds
-Nine of Spades
-Ten of Clubs
-Five of Clubs
-seven of Hearts
-Four of Hearts
-Ace of Diamonds
-King of Diamonds
-Six of Clubs
-Three of Spades
-Six of Spades
-seven of Clubs
-seven of Diamonds
-King of Clubs
-Jack of Clubs
-Ten of Hearts
-Nine of Clubs
-Queen of Spades
-Queen of Diamonds
 Four of Clubs
-Ace of Hearts
-Ace of Clubs
-seven of Spades
-Two of Hearts
-Jack of Hearts
-King of Spades
-Queen of Hearts
-Six of Hearts
-King of Hearts
-Jack of Diamonds
-Five of Hearts
-Two of Diamonds
 Two of Clubs
-Two of Spades
-Three of Hearts
+Queen of Hearts
 Nine of Diamonds
-Jack of Spades
-Three of Diamonds
-Eight of Spades
-Eight of Hearts
+Three of Hearts
+Two of Spades
+King of Diamonds
+Five of Hearts
+seven of Diamonds
+King of Hearts
+Six of Spades
+Ace of Diamonds
+Ten of Diamonds
+seven of Hearts
+Ace of Clubs
+Five of Spades
 Ten of Spades
 Eight of Diamonds
-Four of Diamonds
+Eight of Spades
 Queen of Clubs
+Two of Hearts
+Nine of Clubs
+Nine of Hearts
+Ten of Clubs
+Two of Diamonds
+Queen of Diamonds
+Nine of Spades
+King of Spades
+Six of Hearts
+seven of Spades
+Ace of Hearts
+Ten of Hearts
+King of Clubs
+Jack of Spades
+Three of Diamonds
+Five of Clubs
+Four of Diamonds
+Five of Diamonds
+Six of Clubs
+Jack of Diamonds
+Three of Spades
+seven of Clubs
+Six of Diamonds
+Ace of Spades
+Jack of Clubs
+Eight of Hearts
+Queen of Spades
+Eight of Clubs
+Jack of Hearts
 Four of Spades
-52
-Times shuffled 3 
+Three of Clubs
+Four of Hearts
+52 
 */
