@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TwentyOne
 {
-    //NOTE: First we make it publi so it is accessible theroughout the program.
+    //NOTE: First we make it public so it is accessible theroughout the program.
     public class Player
     {
         //NOTE: By typing 'prob' then [Tab][Tab], this will come up automatically 'public int MyProperty { get; set; }'.
