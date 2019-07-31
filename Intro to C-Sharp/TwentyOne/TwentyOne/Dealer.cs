@@ -15,8 +15,9 @@ namespace TwentyOne
         public void Deal(List<Card> Hand)
         {
             //NOTE: 'using System.Linq;' to use the integrated 'First()' method.
-            //NOTE: What we are doing here is assing a 'Deck' of 'Cards' (property of Deck), then getting the 
-            //      first card in that list ( using 'First()' ), then adding it to the 'Hand' that was passed in (which is a list of cards).
+            //NOTE: What we are doing here is passing in a 'Deck' of 'Cards' (property of Deck), then getting the 
+            //      first card in that list ( using 'First()' ), then adding it to the 'Hand' (which is a list of cards)  
+	    //	    that was passed in, in the 'Deal' method.
             Hand.Add(Deck.Cards.First());
 
             //NOTE: This line is done so that the player can see the card on the console.
