@@ -1,0 +1,11 @@
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill19 - Abstract Classes\Drill19Abstract\Drill19Abstract\bin\Debug\netcoreapp2.1\Drill19Abstract.deps.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill19 - Abstract Classes\Drill19Abstract\Drill19Abstract\bin\Debug\netcoreapp2.1\Drill19Abstract.runtimeconfig.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill19 - Abstract Classes\Drill19Abstract\Drill19Abstract\bin\Debug\netcoreapp2.1\Drill19Abstract.runtimeconfig.dev.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill19 - Abstract Classes\Drill19Abstract\Drill19Abstract\bin\Debug\netcoreapp2.1\Drill19Abstract.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill19 - Abstract Classes\Drill19Abstract\Drill19Abstract\bin\Debug\netcoreapp2.1\Drill19Abstract.pdb
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill19 - Abstract Classes\Drill19Abstract\Drill19Abstract\obj\Debug\netcoreapp2.1\Drill19Abstract.csprojAssemblyReference.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill19 - Abstract Classes\Drill19Abstract\Drill19Abstract\obj\Debug\netcoreapp2.1\Drill19Abstract.csproj.CoreCompileInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill19 - Abstract Classes\Drill19Abstract\Drill19Abstract\obj\Debug\netcoreapp2.1\Drill19Abstract.AssemblyInfoInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill19 - Abstract Classes\Drill19Abstract\Drill19Abstract\obj\Debug\netcoreapp2.1\Drill19Abstract.AssemblyInfo.cs
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill19 - Abstract Classes\Drill19Abstract\Drill19Abstract\obj\Debug\netcoreapp2.1\Drill19Abstract.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill19 - Abstract Classes\Drill19Abstract\Drill19Abstract\obj\Debug\netcoreapp2.1\Drill19Abstract.pdb
