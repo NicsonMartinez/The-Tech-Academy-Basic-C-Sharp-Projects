@@ -17,22 +17,40 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
-            Deck deck = new Deck();
+            //NOTE: Here we instantiated a 'TwentyOneGame' game object.
+            TwentyOneGame game = new TwentyOneGame();
 
-            //NOTE: The 'Shuffle' method was moved from the this class, to the 'Deck' class becuase in OOP objects
-            //      have a state and behaviors, and we can consider shuffle a behavior of a deck object.
-            //NOTE: Since we removed the 'Shuffle' method to the Deck class (and made changes to that method), now we are 
-            //      able to call the 'Shuffle' method from a deck object and optionally pass in a parameter an int
-            //      telling the method how many times we are shuffling the deck.
-            deck.Shuffle(3);
+            //NOTE: Here we added players to the 'Players' (list of strings), which is a 'Game' property (we have access
+            //      to that property due to inheritance).
+            game.Players = new List<String>() { "Nicson", "Jesse", "Bill" };
 
-            foreach (Card card in deck.Cards)
-            {
-                Console.WriteLine(card.Face + " of " + card.Suit);
-            }
-            Console.WriteLine(deck.Cards.Count);
+            //NOTE: Now we are calling that 'ListPlayers()' which has implementation from the 'public override void ListPlayers()' which
+            //      includes the overriden implementation ("12 Players"), and the default implementation (List of players). 
+            game.ListPlayers();
             Console.ReadLine();
+
+            //NOTE: The code above will be deleted, it was just done to go over abstract classes, abstract methods, 
+            //      and virtual methods, and override methods.
+            //NOTE: The code below will be uncommented.
+
+            //Deck deck = new Deck();
+
+            //deck.Shuffle(3);
+
+            //foreach (Card card in deck.Cards)
+            //{
+            //    Console.WriteLine(card.Face + " of " + card.Suit);
+            //}
+            //Console.WriteLine(deck.Cards.Count);
+            //Console.ReadLine();
         }
 
     }
 }
+/*NOTE:
+OUTPUT:
+21 Players
+Nicson
+Jesse
+Bill
+*/
