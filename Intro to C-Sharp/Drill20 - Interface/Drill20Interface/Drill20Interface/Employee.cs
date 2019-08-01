@@ -15,6 +15,7 @@ namespace Drill20Interface
         public void Quit()
         {
             Console.WriteLine("I Quit");
+            Console.ReadLine();
         }
 
         

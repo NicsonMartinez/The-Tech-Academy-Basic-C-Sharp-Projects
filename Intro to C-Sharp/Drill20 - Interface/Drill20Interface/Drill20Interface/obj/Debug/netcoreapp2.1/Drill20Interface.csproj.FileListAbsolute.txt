@@ -1,0 +1,11 @@
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill20 - Interface\Drill20Interface\Drill20Interface\bin\Debug\netcoreapp2.1\Drill20Interface.deps.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill20 - Interface\Drill20Interface\Drill20Interface\bin\Debug\netcoreapp2.1\Drill20Interface.runtimeconfig.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill20 - Interface\Drill20Interface\Drill20Interface\bin\Debug\netcoreapp2.1\Drill20Interface.runtimeconfig.dev.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill20 - Interface\Drill20Interface\Drill20Interface\bin\Debug\netcoreapp2.1\Drill20Interface.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill20 - Interface\Drill20Interface\Drill20Interface\bin\Debug\netcoreapp2.1\Drill20Interface.pdb
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill20 - Interface\Drill20Interface\Drill20Interface\obj\Debug\netcoreapp2.1\Drill20Interface.csprojAssemblyReference.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill20 - Interface\Drill20Interface\Drill20Interface\obj\Debug\netcoreapp2.1\Drill20Interface.csproj.CoreCompileInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill20 - Interface\Drill20Interface\Drill20Interface\obj\Debug\netcoreapp2.1\Drill20Interface.AssemblyInfoInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill20 - Interface\Drill20Interface\Drill20Interface\obj\Debug\netcoreapp2.1\Drill20Interface.AssemblyInfo.cs
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill20 - Interface\Drill20Interface\Drill20Interface\obj\Debug\netcoreapp2.1\Drill20Interface.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill20 - Interface\Drill20Interface\Drill20Interface\obj\Debug\netcoreapp2.1\Drill20Interface.pdb

@@ -17,10 +17,11 @@ namespace Drill20Interface
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //NOTE: Since 'IQuittable' 'is an' 'Employee' in this context, I can use Polymorphism.
+            IQuittable employee = new Employee();
+            employee.Quit();
         }
-
-        IQuittable employee = new Employee();
-        //Whats going on here..
     }
+
+        
 }
