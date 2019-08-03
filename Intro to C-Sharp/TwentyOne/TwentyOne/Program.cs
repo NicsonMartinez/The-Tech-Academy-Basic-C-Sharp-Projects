@@ -18,19 +18,34 @@ namespace TwentyOne
         static void Main(string[] args)
         {
             //NOTE: Here we instantiated a 'TwentyOneGame' game object.
-            TwentyOneGame game = new TwentyOneGame();
+            Game game = new TwentyOneGame();
 
-            //NOTE: Here we added players to the 'Players' (list of strings), which is a 'Game' property (we have access
-            //      to that property due to inheritance).
-            game.Players = new List<String>() { "Nicson", "Jesse", "Bill" };
+            //NOTE: Lists must be instantiated before they can be used (If we didn't it would cause an error).
+            //NOTE: The property 'Players' (which is a list of 'Player' objects), which is a property of the 'Game' class 
+            //      must be instantiated in this class before it can be used. The List of players needs to be used
+            //      for us to call the overloaded operators "+" and "-" method in the 'Player' class.
+            game.Players = new List<Player>();
 
-            //NOTE: Now we are calling that 'ListPlayers()' which has implementation from the 'public override void ListPlayers()' which
-            //      includes the overriden implementation ("12 Players"), and the default implementation (List of players). 
-            game.ListPlayers();
-            Console.ReadLine();
+            //NOTE: Here we are creating a new 'Player' object that has property name = 'Nicson'
+            Player player = new Player();
+            player.Name = "Nicson";
 
-            //NOTE: The code above will be deleted, it was just done to go over abstract classes, abstract methods, 
-            //      and virtual methods, and override methods.
+            //NOTE: Here we are seeing overloaded operator in action we created in the 'Player' class which 
+            //technically is a method that takes in 'Game' & 'Player' objects and returns a game object.      
+            game += player;
+            //NOTE: The code above is the same as 'game = game + player;'
+            //In this case Game.
+
+            Console.WriteLine(game.Players.Count);
+            //NOTE: At this point 'game.Players.Count' = 1 becuase the player "Nicson" was added. 
+
+            game -= player;
+            //NOTE: The code above is the same as 'game = game - player;'
+
+            Console.WriteLine(game.Players.Count);
+            //NOTE: At this point 'game.Players.Count' = 0 becuase the player "Nicson" was subtracted. 
+
+            //NOTE: The code above will be altered later, this was just done to go over overloaded operators.
             //NOTE: The code below will be uncommented.
 
             //Deck deck = new Deck();
@@ -49,8 +64,6 @@ namespace TwentyOne
 }
 /*NOTE:
 OUTPUT:
-21 Players
-Nicson
-Jesse
-Bill
+1
+0
 */
