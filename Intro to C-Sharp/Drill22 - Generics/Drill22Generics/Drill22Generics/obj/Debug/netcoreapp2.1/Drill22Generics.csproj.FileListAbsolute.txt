@@ -1,0 +1,11 @@
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill22 - Generics\Drill22Generics\Drill22Generics\bin\Debug\netcoreapp2.1\Drill22Generics.deps.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill22 - Generics\Drill22Generics\Drill22Generics\bin\Debug\netcoreapp2.1\Drill22Generics.runtimeconfig.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill22 - Generics\Drill22Generics\Drill22Generics\bin\Debug\netcoreapp2.1\Drill22Generics.runtimeconfig.dev.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill22 - Generics\Drill22Generics\Drill22Generics\bin\Debug\netcoreapp2.1\Drill22Generics.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill22 - Generics\Drill22Generics\Drill22Generics\bin\Debug\netcoreapp2.1\Drill22Generics.pdb
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill22 - Generics\Drill22Generics\Drill22Generics\obj\Debug\netcoreapp2.1\Drill22Generics.csprojAssemblyReference.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill22 - Generics\Drill22Generics\Drill22Generics\obj\Debug\netcoreapp2.1\Drill22Generics.csproj.CoreCompileInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill22 - Generics\Drill22Generics\Drill22Generics\obj\Debug\netcoreapp2.1\Drill22Generics.AssemblyInfoInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill22 - Generics\Drill22Generics\Drill22Generics\obj\Debug\netcoreapp2.1\Drill22Generics.AssemblyInfo.cs
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill22 - Generics\Drill22Generics\Drill22Generics\obj\Debug\netcoreapp2.1\Drill22Generics.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill22 - Generics\Drill22Generics\Drill22Generics\obj\Debug\netcoreapp2.1\Drill22Generics.pdb
