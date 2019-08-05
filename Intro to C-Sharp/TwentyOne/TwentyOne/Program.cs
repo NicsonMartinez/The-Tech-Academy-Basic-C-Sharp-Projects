@@ -17,53 +17,73 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
-            //NOTE: Here we instantiated a 'TwentyOneGame' game object.
-            Game game = new TwentyOneGame();
+            Deck deck = new Deck();
 
-            //NOTE: Lists must be instantiated before they can be used (If we didn't it would cause an error).
-            //NOTE: The property 'Players' (which is a list of 'Player' objects), which is a property of the 'Game' class 
-            //      must be instantiated in this class before it can be used. The List of players needs to be used
-            //      for us to call the overloaded operators "+" and "-" method in the 'Player' class.
-            game.Players = new List<Player>();
+            deck.Shuffle(3);
 
-            //NOTE: Here we are creating a new 'Player' object that has property name = 'Nicson'
-            Player player = new Player();
-            player.Name = "Nicson";
-
-            //NOTE: Here we are seeing overloaded operator in action we created in the 'Player' class which 
-            //technically is a method that takes in 'Game' & 'Player' objects and returns a game object.      
-            game += player;
-            //NOTE: The code above is the same as 'game = game + player;'
-            //In this case Game.
-
-            Console.WriteLine(game.Players.Count);
-            //NOTE: At this point 'game.Players.Count' = 1 becuase the player "Nicson" was added. 
-
-            game -= player;
-            //NOTE: The code above is the same as 'game = game - player;'
-
-            Console.WriteLine(game.Players.Count);
-            //NOTE: At this point 'game.Players.Count' = 0 becuase the player "Nicson" was subtracted. 
-
-            //NOTE: The code above will be altered later, this was just done to go over overloaded operators.
-            //NOTE: The code below will be uncommented.
-
-            //Deck deck = new Deck();
-
-            //deck.Shuffle(3);
-
-            //foreach (Card card in deck.Cards)
-            //{
-            //    Console.WriteLine(card.Face + " of " + card.Suit);
-            //}
-            //Console.WriteLine(deck.Cards.Count);
-            //Console.ReadLine();
+            foreach (Card card in deck.Cards)
+            {
+                Console.WriteLine(card.Face + " of " + card.Suit);
+            }
+            Console.WriteLine(deck.Cards.Count);
+            Console.ReadLine();
         }
 
     }
 }
 /*NOTE:
 OUTPUT:
-1
-0
+Jack of Hearts
+Three of Spades
+Nine of Diamonds
+Six of Hearts
+Seven of Clubs
+Five of Spades
+Ten of Hearts
+Two of Spades
+Five of Clubs
+Seven of Spades
+Seven of Diamonds
+Ace of Diamonds
+Eight of Clubs
+Ten of Clubs
+Three of Clubs
+Nine of Clubs
+King of Clubs
+Six of Clubs
+four of Hearts
+four of Spades
+Queen of Hearts
+Ten of Spades
+Queen of Spades
+Jack of Clubs
+Ace of Hearts
+Ace of Clubs
+four of Clubs
+Queen of Diamonds
+Ace of Spades
+Five of Hearts
+Jack of Spades
+Eight of Spades
+Ten of Diamonds
+Queen of Clubs
+Three of Diamonds
+King of Spades
+Three of Hearts
+Six of Spades
+Two of Clubs
+four of Diamonds
+Two of Hearts
+Eight of Diamonds
+Two of Diamonds
+Five of Diamonds
+Seven of Hearts
+Nine of Spades
+Six of Diamonds
+Nine of Hearts
+Eight of Hearts
+King of Hearts
+King of Diamonds
+Jack of Diamonds
+52
 */
