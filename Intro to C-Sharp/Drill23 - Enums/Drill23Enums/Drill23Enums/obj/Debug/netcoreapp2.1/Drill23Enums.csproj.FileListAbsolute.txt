@@ -1,0 +1,11 @@
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill23 - Enums\Drill23Enums\Drill23Enums\bin\Debug\netcoreapp2.1\Drill23Enums.deps.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill23 - Enums\Drill23Enums\Drill23Enums\bin\Debug\netcoreapp2.1\Drill23Enums.runtimeconfig.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill23 - Enums\Drill23Enums\Drill23Enums\bin\Debug\netcoreapp2.1\Drill23Enums.runtimeconfig.dev.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill23 - Enums\Drill23Enums\Drill23Enums\bin\Debug\netcoreapp2.1\Drill23Enums.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill23 - Enums\Drill23Enums\Drill23Enums\bin\Debug\netcoreapp2.1\Drill23Enums.pdb
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill23 - Enums\Drill23Enums\Drill23Enums\obj\Debug\netcoreapp2.1\Drill23Enums.csprojAssemblyReference.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill23 - Enums\Drill23Enums\Drill23Enums\obj\Debug\netcoreapp2.1\Drill23Enums.csproj.CoreCompileInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill23 - Enums\Drill23Enums\Drill23Enums\obj\Debug\netcoreapp2.1\Drill23Enums.AssemblyInfoInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill23 - Enums\Drill23Enums\Drill23Enums\obj\Debug\netcoreapp2.1\Drill23Enums.AssemblyInfo.cs
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill23 - Enums\Drill23Enums\Drill23Enums\obj\Debug\netcoreapp2.1\Drill23Enums.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill23 - Enums\Drill23Enums\Drill23Enums\obj\Debug\netcoreapp2.1\Drill23Enums.pdb
