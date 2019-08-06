@@ -10,10 +10,13 @@ IN A CONSOLE APP, CREATE CODE THAT DOES THE FOLLOWING:
 4. Wrap the above statement in a try/catch block and have it print "Please enter an actual day of the week." to the console if an error occurs.
 
 For this drill, you'll need to do some additional research on how to parse enums.
+
+By: Nicson Martinez
+Date: 8/6/19
 */
 
 using System;
-using System.Globalization;
+using System.Globalization; //NOTE: This must be used for capitalization of strings.
 
 namespace Drill23Enums
 {
@@ -22,7 +25,7 @@ namespace Drill23Enums
         static void Main(string[] args)
         {
             
-
+            //NOTE: This is what keeps the program running.
             bool keepGoing = true;
             
             while (keepGoing)
@@ -37,25 +40,30 @@ namespace Drill23Enums
                 //      and converts it to 'Monday' so it can be conpared with the day string in the enum object.
                 string userInputCapitalized = textInfo.ToTitleCase(userInput.ToLower());
 
+                //NOTE: if isNotAnActualDay stays 'true' throughout the program (doesn't switch to 'false'), then 'userInput' is not a day of the week.
+                bool isNotAnActualDay = true;
+
                 //NOTE: 'GetNames' retrieves an array of strings of the enum object set.
                 foreach (string day in Enum.GetNames(typeof(DaysOfTheWeek)))
                 {
                     if (day == userInputCapitalized)
                     {
                         Console.WriteLine("\nThe day you typed, " + userInputCapitalized + ", is an actual day of the week.");
-                        break;
-                    }
-                    else
-                    {
-                        Console.WriteLine("\nThe day you typed, " + userInput + ", is not actual day of the week.");
-
-                        break;
+                        isNotAnActualDay = false;
                     }
                 }
-                
+                if (isNotAnActualDay)
+                {
+                    Console.WriteLine("\nThe day you typed, " + userInput + ", is Not an actual day of the week.");
+                }
+
+                //NOTE: This is what keeps the decision making process whether the user wishes to contnue the program or not.
+                //      If the user doesn't type '1' or '0', 'continueDeciding' will remain 'true'.
                 bool continueDeciding = true;
+
                 while (continueDeciding)
                 {
+                    //NOTE: This try catch happens just in case the user does not type a valid integer.
                     try
                     {
                         Console.WriteLine("\nPlease type '1' if you'd like to keep going, or '0' to quit:");
@@ -64,18 +72,11 @@ namespace Drill23Enums
                         {
                             keepGoing = true;
                             continueDeciding = false;
-                            break;
+                            
                         }
                         if (userChoice == 0)
                         {
                             keepGoing = false;
-                            continueDeciding = false;
-                            
-                        }
-                        else
-                        {
-                            Console.WriteLine("ERROR: Please enter a valid integer.");
-                            keepGoing = true;
                             continueDeciding = false;
                         }
                     }
@@ -93,7 +94,7 @@ namespace Drill23Enums
                         Console.WriteLine("Any integers lower than the min, or highter than the max will not work.\n");
                         continueDeciding = true;
                     }
-                    catch (Exception ex)
+                    catch (Exception)
                     {
                         Console.WriteLine("ERROR: Something went wrong, please try again.\n");
                         continueDeciding = true;
@@ -101,6 +102,10 @@ namespace Drill23Enums
                 }
 
             }
+
+            //NOTE: This part of the program only happens if 
+            Console.WriteLine("\nGoodbye!");
+            Console.ReadLine();
             
         }
     }
