@@ -4,18 +4,14 @@ using System.Text;
 
 namespace TwentyOne
 {
-    public class Card
+    //NOTE: Here we are changinig 'Card' from a 'class' to a 'struct' becuase once we set a value, we don't want it to change.
+    //      Also, the Card class doesn't inherit from or to any other classes, which makes it qualify to be struct.
+    public struct Card
     {
-        //NOTE: Here we got rid of our constructor.
-
-        //NOTE: Below we changed the data type of property 'Suit' from 'string' to 'Suit' (after creating enum 'Suit')
-        public Suit Suit { get; set; }
-
-        //NOTE: Below we changed the data type of property 'Face' from 'string' to 'Face' (after creating enum 'Face')
+        public Suit Suit { get; set; })
         public Face Face { get; set; }
 
     }
-    //NOTE: Here we are creating enum 'Suit'.
     public enum Suit
     {
         Clubs,
@@ -23,7 +19,6 @@ namespace TwentyOne
         Hearts,
         Spades
     }
-    //NOTE: Here we are creating enum 'Suit'.
     public enum Face
     {
         Two,
