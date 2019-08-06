@@ -1,0 +1,11 @@
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill24 - Structs\Drill24Structs\Drill24Structs\bin\Debug\netcoreapp2.1\Drill24Structs.deps.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill24 - Structs\Drill24Structs\Drill24Structs\bin\Debug\netcoreapp2.1\Drill24Structs.runtimeconfig.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill24 - Structs\Drill24Structs\Drill24Structs\bin\Debug\netcoreapp2.1\Drill24Structs.runtimeconfig.dev.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill24 - Structs\Drill24Structs\Drill24Structs\bin\Debug\netcoreapp2.1\Drill24Structs.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill24 - Structs\Drill24Structs\Drill24Structs\bin\Debug\netcoreapp2.1\Drill24Structs.pdb
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill24 - Structs\Drill24Structs\Drill24Structs\obj\Debug\netcoreapp2.1\Drill24Structs.csprojAssemblyReference.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill24 - Structs\Drill24Structs\Drill24Structs\obj\Debug\netcoreapp2.1\Drill24Structs.csproj.CoreCompileInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill24 - Structs\Drill24Structs\Drill24Structs\obj\Debug\netcoreapp2.1\Drill24Structs.AssemblyInfoInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill24 - Structs\Drill24Structs\Drill24Structs\obj\Debug\netcoreapp2.1\Drill24Structs.AssemblyInfo.cs
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill24 - Structs\Drill24Structs\Drill24Structs\obj\Debug\netcoreapp2.1\Drill24Structs.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill24 - Structs\Drill24Structs\Drill24Structs\obj\Debug\netcoreapp2.1\Drill24Structs.pdb
