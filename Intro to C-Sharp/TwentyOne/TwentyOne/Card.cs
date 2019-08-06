@@ -8,7 +8,7 @@ namespace TwentyOne
     //      Also, the Card class doesn't inherit from or to any other classes, which makes it qualify to be struct.
     public struct Card
     {
-        public Suit Suit { get; set; })
+        public Suit Suit { get; set; }
         public Face Face { get; set; }
 
     }
