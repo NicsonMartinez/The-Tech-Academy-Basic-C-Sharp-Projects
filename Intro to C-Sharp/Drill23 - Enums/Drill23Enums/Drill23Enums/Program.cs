@@ -21,32 +21,87 @@ namespace Drill23Enums
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hi user, please enter the day of the week.");
-            string userInput = Console.ReadLine();
+            
 
-            //NOTE: This Creates a TextInfo based on the "en-US" culture.
-            TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
-
-            //NOTE: This is done in the case that the user types something like 'monday' 'MONDAY' or even'mOnDAY'
-            //      and converts it to 'Monday' so it can be conpared with the day string in the enum object.
-            string userInputCapitalized = textInfo.ToTitleCase(userInput.ToLower());
-
-            //NOTE: 'GetNames' retrieves an array of strings of the enum object set.
-            foreach (string day in Enum.GetNames(typeof(DaysOfTheWeek)))
+            bool keepGoing = true;
+            
+            while (keepGoing)
             {
-                if (day == userInputCapitalized)
-                {
-                    Console.WriteLine("\nThe day you typed, " + userInputCapitalized + ", is an actual day of the week.");
-                    break;
-                }
-                else
-                {
-                    Console.WriteLine("\nThe day you typed, " + userInput + ", is not actual day of the week.");
+                Console.WriteLine("Hi user, please enter the day of the week.");
+                string userInput = Console.ReadLine();
 
-                    break;
+                //NOTE: This Creates a TextInfo based on the "en-US" culture.
+                TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
+
+                //NOTE: This is done in the case that the user types something like 'monday' 'MONDAY' or even'mOnDAY'
+                //      and converts it to 'Monday' so it can be conpared with the day string in the enum object.
+                string userInputCapitalized = textInfo.ToTitleCase(userInput.ToLower());
+
+                //NOTE: 'GetNames' retrieves an array of strings of the enum object set.
+                foreach (string day in Enum.GetNames(typeof(DaysOfTheWeek)))
+                {
+                    if (day == userInputCapitalized)
+                    {
+                        Console.WriteLine("\nThe day you typed, " + userInputCapitalized + ", is an actual day of the week.");
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nThe day you typed, " + userInput + ", is not actual day of the week.");
+
+                        break;
+                    }
                 }
+                
+                bool continueDeciding = true;
+                while (continueDeciding)
+                {
+                    try
+                    {
+                        Console.WriteLine("\nPlease type '1' if you'd like to keep going, or '0' to quit:");
+                        int userChoice = Convert.ToInt32(Console.ReadLine());
+                        if (userChoice == 1)
+                        {
+                            keepGoing = true;
+                            continueDeciding = false;
+                            break;
+                        }
+                        if (userChoice == 0)
+                        {
+                            keepGoing = false;
+                            continueDeciding = false;
+                            
+                        }
+                        else
+                        {
+                            Console.WriteLine("ERROR: Please enter a valid integer.");
+                            keepGoing = true;
+                            continueDeciding = false;
+                        }
+                    }
+                    catch (FormatException ex)
+                    {
+                        Console.WriteLine("\nERROR: " + ex.Message);
+                        Console.WriteLine("You must enter an integer.\n");
+                        continueDeciding = true;
+                    }
+                    catch (OverflowException ex)
+                    {
+                        Console.WriteLine("\nERROR: " + ex.Message);
+                        Console.WriteLine("The min Int32 value you may enter is -2,147,483,648.");
+                        Console.WriteLine("The max Int32 value you may enter is 2,147,483,647.");
+                        Console.WriteLine("Any integers lower than the min, or highter than the max will not work.\n");
+                        continueDeciding = true;
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("ERROR: Something went wrong, please try again.\n");
+                        continueDeciding = true;
+                    }
+                }
+
             }
-            Console.ReadLine();
+            
         }
     }
 
