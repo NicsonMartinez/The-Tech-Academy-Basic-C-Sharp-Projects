@@ -1,0 +1,11 @@
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill25 - Lambda Expression\Drill25Lambda\Drill25Lambda\bin\Debug\netcoreapp2.1\Drill25Lambda.deps.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill25 - Lambda Expression\Drill25Lambda\Drill25Lambda\bin\Debug\netcoreapp2.1\Drill25Lambda.runtimeconfig.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill25 - Lambda Expression\Drill25Lambda\Drill25Lambda\bin\Debug\netcoreapp2.1\Drill25Lambda.runtimeconfig.dev.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill25 - Lambda Expression\Drill25Lambda\Drill25Lambda\bin\Debug\netcoreapp2.1\Drill25Lambda.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill25 - Lambda Expression\Drill25Lambda\Drill25Lambda\bin\Debug\netcoreapp2.1\Drill25Lambda.pdb
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill25 - Lambda Expression\Drill25Lambda\Drill25Lambda\obj\Debug\netcoreapp2.1\Drill25Lambda.csprojAssemblyReference.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill25 - Lambda Expression\Drill25Lambda\Drill25Lambda\obj\Debug\netcoreapp2.1\Drill25Lambda.csproj.CoreCompileInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill25 - Lambda Expression\Drill25Lambda\Drill25Lambda\obj\Debug\netcoreapp2.1\Drill25Lambda.AssemblyInfoInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill25 - Lambda Expression\Drill25Lambda\Drill25Lambda\obj\Debug\netcoreapp2.1\Drill25Lambda.AssemblyInfo.cs
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill25 - Lambda Expression\Drill25Lambda\Drill25Lambda\obj\Debug\netcoreapp2.1\Drill25Lambda.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill25 - Lambda Expression\Drill25Lambda\Drill25Lambda\obj\Debug\netcoreapp2.1\Drill25Lambda.pdb
