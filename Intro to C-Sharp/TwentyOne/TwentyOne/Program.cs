@@ -20,8 +20,10 @@ namespace TwentyOne
 
             Console.WriteLine("Welcome to the Grand Hotel and Casino. Let's start by telling me your name.");
             string playerName = Console.ReadLine();
+
             Console.WriteLine("And How much money did you bring today?");
             int bank = Convert.ToInt32(Console.ReadLine());
+
             Console.WriteLine("Hello, {0}. Would you like to join a game of 21 right now?", playerName);
             string answer = Console.ReadLine().ToLower();
             if (answer == "yes" || answer == "yeah" || answer == "y" || answer == "ya")
@@ -48,10 +50,18 @@ namespace TwentyOne
                 {
                     //NOTE: The method, 'play()' doesn't have functionality yet, but it will
                     //      eventually.
-                    game.Play(); 
-                                
+                    game.Play();     
                 }
+                //NOTE: Outside of the while loop we will subtract the  player form the game.
+                game -= player;
+                Console.WriteLine("Thank You for playing!");
             }
+            //NOTE: We won't do an else statement, if they say anything other than 'yes' 'yeah' 'y' & 'ya',
+            //      then it will jump to this line.
+            Console.WriteLine("Feel free to look around the casino. Bye for now.");
+            Console.ReadLine();
+
+            //NOTE: This is all that the main method is going to have.
         }
 
     }
