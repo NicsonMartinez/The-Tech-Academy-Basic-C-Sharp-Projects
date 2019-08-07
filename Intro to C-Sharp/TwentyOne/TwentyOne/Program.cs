@@ -17,72 +17,42 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
-            Deck deck = new Deck();
-            deck.Shuffle(3);
 
-            foreach (Card card in deck.Cards)
+            Console.WriteLine("Welcome to the Grand Hotel and Casino. Let's start by telling me your name.");
+            string playerName = Console.ReadLine();
+            Console.WriteLine("And How much money did you bring today?");
+            int bank = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Hello, {0}. Would you like to join a game of 21 right now?", playerName);
+            string answer = Console.ReadLine().ToLower();
+            if (answer == "yes" || answer == "yeah" || answer == "y" || answer == "ya")
             {
-                Console.WriteLine(card.Face + " of " + card.Suit);
+                //NOTE: When the user answers yes, it will create a new player.
+                //      In the 'Player' class we will create a constructoe that will 
+                //      create that player with how much money they are bringing to the game.
+                Player player = new Player(playerName, bank);
+
+                //NOTE: Here we are using Polymorphism, while creating a 'TwentyOneGame' as also its 
+                //      parent class, 'Game' so that it exposes those overloaded operators we 
+                //      made in the 'Player' class, which returns a 'Game' object, and to a  
+                //      specified game object such as 'TwentyOneGame'.
+                Game game = new TwentyOneGame();
+
+                //NOTE: Here we are adding players into a game.
+                game += player;
+
+                player.isActivelyPlaying = true;
+
+                //NOTE: 'isActivelyPlaying' and 'player.balabnce' are used as a way to track
+                //      wether the player is playing the game or isn't/can't play the game.
+                while (player.isActivelyPlaying && player.Balance > 0)
+                {
+                    //NOTE: The method, 'play()' doesn't have functionality yet, but it will
+                    //      eventually.
+                    game.Play(); 
+                                
+                }
             }
-            Console.WriteLine(deck.Cards.Count);
-            Console.ReadLine();
         }
 
     }
 }
-/*NOTE:
-OUTPUT:
-Jack of Hearts
-Three of Spades
-Nine of Diamonds
-Six of Hearts
-Seven of Clubs
-Five of Spades
-Ten of Hearts
-Two of Spades
-Five of Clubs
-Seven of Spades
-Seven of Diamonds
-Ace of Diamonds
-Eight of Clubs
-Ten of Clubs
-Three of Clubs
-Nine of Clubs
-King of Clubs
-Six of Clubs
-four of Hearts
-four of Spades
-Queen of Hearts
-Ten of Spades
-Queen of Spades
-Jack of Clubs
-Ace of Hearts
-Ace of Clubs
-four of Clubs
-Queen of Diamonds
-Ace of Spades
-Five of Hearts
-Jack of Spades
-Eight of Spades
-Ten of Diamonds
-Queen of Clubs
-Three of Diamonds
-King of Spades
-Three of Hearts
-Six of Spades
-Two of Clubs
-four of Diamonds
-Two of Hearts
-Eight of Diamonds
-Two of Diamonds
-Five of Diamonds
-Seven of Hearts
-Nine of Spades
-Six of Diamonds
-Nine of Hearts
-Eight of Hearts
-King of Hearts
-King of Diamonds
-Jack of Diamonds
-52
-*/
