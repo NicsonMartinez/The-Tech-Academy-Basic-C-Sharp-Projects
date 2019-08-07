@@ -9,6 +9,8 @@ IN A CONSOLE APP, CREATE CODE THAT DOES THE FOLLOWING:
 3. Do the same thing again, but this time with a lambda expression.
 
 4. Using a lambda expression, make a list of all employees with an Id number greater than 5.
+By: Nicson Martinez
+Date: 8/7/19
 */
 using System;
 using System.Collections.Generic;
@@ -89,7 +91,7 @@ namespace Drill25Lambda
             //NOTE: Since each list has the same amount of elements,'10', and since my goal was to
             //      assign each value in each list with the corresponding object respectively, I just
             //      created an employee in each iteration and assigned that specific employee 
-            //      its property by using matching indexes to assigin values.
+            //      its property by matching indexes to assign values.
 
             for (int i = 0; i < 10; i++)
             {
