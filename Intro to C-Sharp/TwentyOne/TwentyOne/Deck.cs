@@ -34,6 +34,15 @@ namespace TwentyOne
             }
         }
         public List<Card> Cards { get; set; }
+
+        //NOTE: Here we had to make a couple of changes to the 'Shuffle' method since it was preoviously in the 'Program' class.
+        //      Now the 'Shuffle' method is no longer 'static' because an object of the (Deck) class where this method resides in , is what
+        //      is going to call this method. Since, a deck object can change, it's method can no longer be fixed/'static'.
+        //NOTE: The 'Shuffle' method will no longer to take in a 'deck' to return a deck, it will only shuffle the cards, applying it to
+        //      the deck object that called it, thus, the method must now be void 'void'. Also, this method is no longer going have 
+        //      an 'out parameter' because it is no longer needed, and it will only have an 'optional parameter' to take in.
+        //NOTE: Another major change was that since we are now in the 'Deck' class, we no longer need to refernce deck.Cards to get a hold
+        //      the Deck class property ('Cards'), which is needed to creata a new list of cards however many times the user wants to.
         public void Shuffle(int times = 1)
         {
             for (int i = 0; i < times; i++)

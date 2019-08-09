@@ -6,20 +6,34 @@ namespace TwentyOne
 {
     public abstract class Game
     {
-        //NOTE: The line used to be, 'public List<string> Players { get; set; }' below and we changed the property to be a 
-        //      a list of objects, 'Player', instead of a list of strings.(this change is happening because players 
-        //      were only strings previously, but now we have player objects).  
-        public List<Player> Players { get; set; }
+
+        //NOTE:Here in this class we removed the 'Dealer' overall becuase we realized dealer is very specific to TwentyOneGame.
+
+        //NOTE: The code above used to be :
+        //      public List<Player> Players { get; set; }
+        //      public Dictionary<Player, int> Bets { get; set; }
+        //NOTE: It needed changing because we needed to instantiate an empty property before it
+        //      can be used and populated in the program.
+
+        //NOTE: What the The Tech Academy video told me to do (to instantiate properties):
+        //      private List<Player> _players = new List<Player>();
+        //      private Dictionary<Player, int> _bets = new Dictionary<Player, int>();
+        //      public List<Player> Players { get { return _players; } set { _players = value; } }
+        //      public Dictionary<Player, int> Bets { get { return _bets; } set { _bets = value; } }
+
+        //NOTE: This is what intellicense told me to do instead. (to instatiate my properties this way
+        //      so they can be used in the program). This process must be done with 'collections' properties. 
+        public List<Player> Players { get; set; } = new List<Player>();
+        public Dictionary<Player, int> Bets { get; set; } = new Dictionary<Player, int>();
+
+
         public string Name { get; set; }
-        public string Dealer { get; set; }
         public abstract void Play();
         public virtual void ListPlayers()
         {
-            //NOTE: Since the Players list Property changed, we also needed to change the 'foreach' loop below.
-            //NOTE: Now we are iterating through a list of type 'Player' objects in 'Players' list (which is the game property)
+
             foreach (Player player in Players)
             {
-                //NOTE: We will have the players names printed  by calling the name property from a 'Player object'.
                 Console.WriteLine(player.Name);
             }
         }
