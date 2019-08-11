@@ -1,0 +1,11 @@
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill26 - Writing Text Files\Drill26TxtFile\Drill26TxtFile\bin\Debug\netcoreapp2.1\Drill26TxtFile.deps.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill26 - Writing Text Files\Drill26TxtFile\Drill26TxtFile\bin\Debug\netcoreapp2.1\Drill26TxtFile.runtimeconfig.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill26 - Writing Text Files\Drill26TxtFile\Drill26TxtFile\bin\Debug\netcoreapp2.1\Drill26TxtFile.runtimeconfig.dev.json
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill26 - Writing Text Files\Drill26TxtFile\Drill26TxtFile\bin\Debug\netcoreapp2.1\Drill26TxtFile.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill26 - Writing Text Files\Drill26TxtFile\Drill26TxtFile\bin\Debug\netcoreapp2.1\Drill26TxtFile.pdb
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill26 - Writing Text Files\Drill26TxtFile\Drill26TxtFile\obj\Debug\netcoreapp2.1\Drill26TxtFile.csprojAssemblyReference.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill26 - Writing Text Files\Drill26TxtFile\Drill26TxtFile\obj\Debug\netcoreapp2.1\Drill26TxtFile.csproj.CoreCompileInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill26 - Writing Text Files\Drill26TxtFile\Drill26TxtFile\obj\Debug\netcoreapp2.1\Drill26TxtFile.AssemblyInfoInputs.cache
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill26 - Writing Text Files\Drill26TxtFile\Drill26TxtFile\obj\Debug\netcoreapp2.1\Drill26TxtFile.AssemblyInfo.cs
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill26 - Writing Text Files\Drill26TxtFile\Drill26TxtFile\obj\Debug\netcoreapp2.1\Drill26TxtFile.dll
+C:\Users\Nicson Martinez\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\Intro to C-Sharp\Drill26 - Writing Text Files\Drill26TxtFile\Drill26TxtFile\obj\Debug\netcoreapp2.1\Drill26TxtFile.pdb
