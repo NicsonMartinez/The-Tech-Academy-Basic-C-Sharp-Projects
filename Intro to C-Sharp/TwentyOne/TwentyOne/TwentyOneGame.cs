@@ -26,7 +26,7 @@ namespace TwentyOne
                 player.Hand = new List<Card>();
 
                 //NOTE: Here we are just making sure that that the 'Stay' property is false 
-                //      for all players at he start of of the game.
+                //      for all players at the start of of the game.
                 player.Stay = false;
             }
 
@@ -149,14 +149,17 @@ namespace TwentyOne
                 }
             }
 
-            //NOTE: Here the playes are deciding wether to stay or hit.
+            //NOTE: Here the playes are deciding whether to stay or hit.
             foreach (Player player in Players)
             {
+                //NOTE: Player.Stay was set to false earlier
                 while (!player.Stay)
                 {
                     Console.WriteLine("Your cards are: ");
                     foreach (Card card in player.Hand)
                     {
+                        //NOTE: Here 'Console.Write' was used instead of 'Console.WriteLine' So that the players
+                        //      hand can be shown th the console in the same line, iteration after iterarion.
                         Console.Write("{0} ", card.ToString());
                     }
                     Console.WriteLine("\n\nHit or Stay?");
