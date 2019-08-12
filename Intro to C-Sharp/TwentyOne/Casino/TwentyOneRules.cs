@@ -2,7 +2,7 @@
 using System.Linq; //NOTE: This is needed for lambda expressions.
 
 
-namespace TwentyOne
+namespace Casino.TwentyOne
 {
     //NOTE: The purpose for creating is to call a bunch of methods associated with the TwentyOneGame.
     public class TwentyOneRules

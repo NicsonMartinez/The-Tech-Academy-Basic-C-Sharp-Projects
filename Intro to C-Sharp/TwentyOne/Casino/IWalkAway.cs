@@ -1,5 +1,5 @@
 ﻿
-namespace TwentyOne.Interfaces
+namespace Casino.Interfaces
 {
     /*NOTE: An interface is very similar to an abstract class in that there are no implementation details. How are abstract
             classes differnt from Interfaces? Well in the .NET framework is built in a way that one class can inherit from 

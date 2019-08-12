@@ -5,11 +5,8 @@ THE TECH ACADEMY PROGRAM
 - The end result won't be a perfect program by any means but it will be a good model of the important part of C#.
  */
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using Casino;
+using Casino.TwentyOne;
 
 namespace TwentyOne
 {

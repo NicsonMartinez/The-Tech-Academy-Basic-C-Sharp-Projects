@@ -207,6 +207,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Casino/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Casino.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Casino.dll": {}
+        }
       }
     }
   },
@@ -680,10 +690,16 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Casino/1.0.0": {
+      "type": "project",
+      "path": "../Casino/Casino.csproj",
+      "msbuildProject": "../Casino/Casino.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "Casino >= 1.0.0",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
@@ -716,7 +732,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Nicson Martinez\\Documents\\GitHub\\The-Tech-Academy-Basic-C-Sharp-Projects\\Intro to C-Sharp\\TwentyOne\\Casino\\Casino.csproj": {
+              "projectPath": "C:\\Users\\Nicson Martinez\\Documents\\GitHub\\The-Tech-Academy-Basic-C-Sharp-Projects\\Intro to C-Sharp\\TwentyOne\\Casino\\Casino.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

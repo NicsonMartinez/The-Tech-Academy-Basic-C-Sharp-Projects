@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-namespace TwentyOne
+namespace Casino
 {
     public class Player
     {

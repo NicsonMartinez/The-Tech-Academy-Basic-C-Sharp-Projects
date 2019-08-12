@@ -1,6 +1,6 @@
 ﻿
 
-namespace TwentyOne
+namespace Casino
 {
     //NOTE: Here we are changinig 'Card' from a 'class' to a 'struct' becuase once we set a value, we don't want it to change.
     //      Also, the Card class doesn't inherit from or to any other classes, which makes it qualify to be struct.
