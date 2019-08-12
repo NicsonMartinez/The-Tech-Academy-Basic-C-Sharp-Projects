@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq; //NOTE: This is needed to use lambda expresssions.
-using System.Text;
+using TwentyOne.Interfaces;
 
 namespace TwentyOne
 {
