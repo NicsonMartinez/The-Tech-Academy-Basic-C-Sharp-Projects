@@ -40,6 +40,7 @@ namespace Casino.TwentyOne
             [Face.Eight] = 8,
             [Face.Nine] = 9,
             [Face.Ten] = 10,
+            [Face.Jack] = 10,
             [Face.Queen] = 10,
             [Face.King] = 10,
 

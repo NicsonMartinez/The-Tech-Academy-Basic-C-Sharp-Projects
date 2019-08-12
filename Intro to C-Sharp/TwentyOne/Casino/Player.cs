@@ -6,6 +6,10 @@ namespace Casino
 {
     public class Player
     {
+
+        public Player(string name) : this (name, 100)
+        {
+        }
         //NOTE: Below is a 'Player' constructor (Constructors go at the top of the class).
         //      Here we have a constructor that takes two arguments and we are assigning them
         //      to properties in this object.
@@ -39,6 +43,12 @@ namespace Casino
         //      create a 'TwentyOnePlayer' class , but it is decided to do this so we don't have
         //      to create so many classes.
         public bool Stay { get; set; }
+
+        //NOTE: Here we are creating a Global Unique Identifier property for 'Player'.
+        //NOTE: The purpose of Guid is to generate an identifier and it applies particularly well
+        //      with people. The odds of generating a repeated Guid are astronomical due to the
+        //      complexity and how large a Guid is.
+        public Guid Id { get; set; }
 
         //NOTE: Here we are creating a method that a 'Player' object can call, that would allow it to
         //      bet for the game or not.

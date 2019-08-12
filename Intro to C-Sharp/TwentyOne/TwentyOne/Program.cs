@@ -5,6 +5,7 @@ THE TECH ACADEMY PROGRAM
 - The end result won't be a perfect program by any means but it will be a good model of the important part of C#.
  */
 using System;
+using System.IO; //NOTE: This is neede for 'StreamWriter'.
 using Casino;
 using Casino.TwentyOne;
 
@@ -14,8 +15,9 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
+            const string casinoName = "Grand Hotel and Casino";
 
-            Console.WriteLine("Welcome to the Grand Hotel and Casino. Let's start by telling me your name.");
+            Console.WriteLine("Welcome to the {0}. Let's start by telling me your name.", casinoName);
             string playerName = Console.ReadLine();
 
             Console.WriteLine("And How much money did you bring today?");
@@ -30,6 +32,14 @@ namespace TwentyOne
                 //      In the 'Player' class we will create a constructoe that will 
                 //      create that player with how much money they are bringing to the game.
                 Player player = new Player(playerName, bank);
+
+                //NOTE: Here we are logging a player 'Guid' so we can uniquely identify that player,
+                //      and the cards that player has dealt with.
+                player.Id = Guid.NewGuid();
+                using (StreamWriter file = new StreamWriter(@"C:\log\log.txt", true))
+                {
+                    file.WriteLine(player.Id);
+                }
 
                 //NOTE: Here we are using Polymorphism, while creating a 'TwentyOneGame' as also its 
                 //      parent class, 'Game' so that it exposes those overloaded operators we 
