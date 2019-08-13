@@ -42,12 +42,28 @@ namespace Casino.TwentyOne
             //NOTE: Here we are shuffling the dealer's deck which is being used for the game.
             Dealer.Deck.Shuffle();
 
-            Console.WriteLine("Place your bet!");
-
             foreach (Player player in Players)
             {
-                //NOTE: Below the user would enter their bet.
-                int bet = Convert.ToInt32(Console.ReadLine());
+                //NOTE: Here it uses the same validation logic as 'Program.cs' under 'TwentyOne'
+                bool validAnswer = false;
+                int bet = 0;
+                while (!validAnswer)
+                {
+                    Console.WriteLine("Place your bet!");
+                    validAnswer = int.TryParse(Console.ReadLine(), out bet);
+                    if (!validAnswer) Console.WriteLine("Please enter digits only, no decimals");
+                }
+
+                //NOTE: Here we are checking if the player's bet is negative, and if it is, the user
+                //      is probably trying to commit a fraudulent act.
+                if (bet < 0)
+                {
+                    //NOTE: Here we are deliberately 'throwing' an exception we created, 'FraudException' which
+                    //      inherits from the intergated c# 'Exception' class.
+                    //NOTE: If the line below gets executed the try-catch in 'Program.cs' will 'catch' the exception,
+                    //      and proceed with specific instructions.
+                    throw new FraudException();
+                }
 
                 //NOTE: We created a bet method in the 'Player class' which takes in a 'bet' int  and
                 //returns a boolean based on the player's balance.
@@ -200,7 +216,6 @@ namespace Casino.TwentyOne
 
             Dealer.isBusted = TwentyOneRules.IsBusted(Dealer.Hand);
 
-            //
             Dealer.Stay = TwentyOneRules.ShouldDealerStay(Dealer.Hand);
             while(!Dealer.Stay && !Dealer.isBusted)
             {

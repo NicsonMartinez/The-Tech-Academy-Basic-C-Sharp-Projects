@@ -20,9 +20,21 @@ namespace TwentyOne
             Console.WriteLine("Welcome to the {0}. Let's start by telling me your name.", casinoName);
             string playerName = Console.ReadLine();
 
-            Console.WriteLine("And How much money did you bring today?");
-            int bank = Convert.ToInt32(Console.ReadLine());
-
+            //NOTE: Here instead of reciving the information with out it being handled,
+            //      eg. 'int bank = Convert.ToInt32(Console.ReadLine());', we created a
+            //      validator that uses the 'int.TryParse' method wich returns a boolean
+            //      based on whether the first string parameter is an int32. The method
+            //      also includes an 'out parameter' of the int result in the case that 
+            //      it is a valid int. This is a quick way to validate user input without
+            //      having to use exception handling.
+            bool validAnswer = false;
+            int bank = 0;
+            while (!validAnswer)
+            {
+                Console.WriteLine("And how much money did you bring today?");
+                validAnswer = int.TryParse(Console.ReadLine(), out bank); 
+                if (!validAnswer) Console.WriteLine("Please enter digits only, no decimals.");
+            }
             
             Console.WriteLine("Hello, {0}. Would you like to join a game of 21 right now?", playerName);
             string answer = Console.ReadLine().ToLower();
@@ -56,9 +68,30 @@ namespace TwentyOne
                 //      wether the player is playing the game or isn't/can't play the game.
                 while (player.isActivelyPlaying && player.Balance > 0)
                 {
-                    //NOTE: The method, 'play()' doesn't have functionality yet, but it will
-                    //      eventually.
-                    game.Play();     
+
+                    //NOTE: This try-cath will catch any errors in the 'Play()' method.
+                    try
+                    {
+                        game.Play();
+                    }
+                    //NOTE: This is an exception we created which inherits the integrated 'Exception' class.
+                    //      It is a great way of 'throwing' a custom exception by when a condition is in
+                    //      our program is met.
+                    catch (FraudException)
+                    {
+                        Console.WriteLine("Security! Kick this person out.");
+                        Console.ReadLine();
+                        return;
+                    }
+                    //NOTE: This is the 'Exception' class that will catch any exception if not covered in the 
+                    //      TwentyOneGame 'Play()' method.
+                    catch (Exception)
+                    {
+                        Console.WriteLine("An error occured. Please contact your System Administrator.");
+                        Console.ReadLine();
+                        return;
+                    }
+                         
                 }
                 //NOTE: Outside of the while loop we will subtract the  player form the game.
                 game -= player;
