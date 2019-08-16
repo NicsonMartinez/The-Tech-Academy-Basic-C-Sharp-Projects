@@ -60,9 +60,11 @@ namespace Casino.TwentyOne
                 {
                     //NOTE: Here we are deliberately 'throwing' an exception we created, 'FraudException' which
                     //      inherits from the intergated c# 'Exception' class.
-                    //NOTE: If the line below gets executed the try-catch in 'Program.cs' will 'catch' the exception,
+                    //NOTE: If the line below gets executed, the try-catch in 'Program.cs' will 'catch' the exception,
                     //      and proceed with specific instructions.
-                    throw new FraudException();
+                    throw new FraudException("Security! Kick this person out.");
+                    //NOTE: Our FraudException class has a 'Constructor Chain Call' so that if the parameter passes in a string, 
+                    //      for e.g. if we had FraudException object, 'ex', 'ex.Message' boue be equal to string, "Security! Kick this person out."
                 }
 
                 //NOTE: We created a bet method in the 'Player class' which takes in a 'bet' int  and

@@ -81,7 +81,9 @@ namespace TwentyOne
                     //      our program is met.
                     catch (FraudException ex)
                     {
-                        Console.WriteLine("Security! Kick this person out.");
+                        //NOTE: In our 'TwentyOneGame' class, we 'throw new FraudException("Security! Kick this person out.");' 
+                        //      If a player bet is lower then 0 (a negative number).
+                        Console.WriteLine(ex.Message);
 
                         //NOTE: Here we are calling the method that we created outside of the main method which takes in an exception.
                         UpdateDbWithException(ex);
