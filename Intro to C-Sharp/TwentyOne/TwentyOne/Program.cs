@@ -5,7 +5,8 @@ THE TECH ACADEMY PROGRAM
 - The end result won't be a perfect program by any means but it will be a good model of the important part of C#.
  */
 using System;
-using System.Data;
+using System.Collections.Generic;
+using System.Data; //NOTE: This is neede to set SQL databse types.
 using System.Data.SqlClient; //NOTE: This is neede to connect and disconnect to/from a database.
 using System.IO;
 using Casino;
@@ -21,6 +22,27 @@ namespace TwentyOne
 
             Console.WriteLine("Welcome to the {0}. Let's start by telling me your name.", casinoName);
             string playerName = Console.ReadLine();
+
+            //NOTE: For learning and texting purposes, if the user types admin as a name, do this.
+            if (playerName.ToLower() == "admin")
+            {
+                //NOTE: We are calling a local private method, 'ReadExceptions' which returns a list of 'ExceptionEntity' objects
+                //      and we are referencing it in variable 'Exceptions'.
+                List<ExceptionEntity> Exceptions = ReadExceptions();
+
+                //NOTE: Here we are iterating through each properties in each ExceptionEntity object created, and printing it
+                //      as a representation of each record in the 'Exceptions' table in the 'TwentyOneGame' database.
+                foreach (var exception in Exceptions)
+                {
+                    Console.Write(exception.Id + " | ");
+                    Console.Write(exception.ExceptionType + " | ");
+                    Console.Write(exception.ExceptionMessage + " | ");
+                    Console.Write(exception.TimeStamp + " | ");
+                    Console.WriteLine();
+                }
+                Console.Read();
+                return;
+            }
 
             //NOTE: Here instead of reciving the information with out it being handled,
             //      eg. 'int bank = Convert.ToInt32(Console.ReadLine());', we created a
@@ -155,7 +177,7 @@ namespace TwentyOne
             //NOTE: The 'using' statement we are using below is different from the 'using' statements above for namespaces. 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                //NOTE: Here we are creating a 'command' object which takes the query and the connection.
+                //NOTE: Here we are creating a 'command' object which takes the query and the connection strings.
                 SqlCommand command = new SqlCommand(queryString, connection);
 
                 //NOTE: Here we are adding the parameter placeholders and their data types to 'Command'.
@@ -187,6 +209,65 @@ namespace TwentyOne
             }
 
 
+        }
+        private static List<ExceptionEntity> ReadExceptions()
+        {
+            string connectionString = @"Data Source=(localdb)\ProjectsV13;Initial Catalog=TwentyOneGame;
+                                        Integrated Security=True;Connect Timeout=30;Encrypt=False;
+                                        TrustServerCertificate=False;ApplicationIntent=ReadWrite;
+                                        MultiSubnetFailover=False";
+            //NOTE: Please be aware that in bigger applicaions you won't have a connection string like this, and
+            //      You'll be using a method to call a piece of information from your configuration file that will 
+            //      appoint you to that connection string. The reason for this is that if for whatever reason that string
+            //      changes, you would have to change this string throught your entire program. (Just something to be aware of).
+
+            //NOTE: This is our query string selects four entities in the 'Exceptions' table in the 'TwentyOneGame' Database.
+            string queryString = @"Select Id, ExceptionType, ExceptionMessage, TimeStamp From Exceptions";
+
+
+            List<ExceptionEntity> Exceptions = new List<ExceptionEntity>();
+
+            //NOTE: Here we are instantiating an SqlConnection.
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                //NOTE: Here we are creating a 'command' object which takes the query and the connection strnigs.
+                SqlCommand command = new SqlCommand(queryString, connection);
+
+                connection.Open();
+
+                //NOTE: After openning the connection to the database, creating an 'SqlDataReader' object by 
+                //      calling the 'ExecuteReader' method (which sends the SqlCommand.CommandText to the SqlCommand.Connection
+                //      and returns a SqlDataReader object) from the 'command' object we instantiated.
+                SqlDataReader reader = command.ExecuteReader();
+                
+                while (reader.Read())
+                {
+                    //NOTE: What 'reader.Read()' will do is, it loops through each record. It returns 'true' if there are more rows, otherwise 
+                    //      it will return false.
+                    //NOTE: So for each record, we will instantiate an 'ExceptionEntity' object (from the 'ExceptionEntity' that we created),
+                    //      then we will user the 'reader' object to read and assign each entity (Id, ExceptionType, ExceptionMessage, TimeStamp) to
+                    //      its corresponding 'ExceptionEntity' class property.
+                    //NOTE: Basically we are mapping each database record to our object.
+                    ExceptionEntity exception = new ExceptionEntity();
+
+                    //NOTE: Since we are getting Sql back, we need to make sure to typecast each column-entity value to its the corresponding type
+                    //      that our object properties are expecting.
+                    exception.Id = Convert.ToInt32(reader["Id"]);
+                    exception.ExceptionType = reader["ExceptionType"].ToString();
+                    exception.ExceptionMessage = reader["ExceptionMessage"].ToString();
+                    exception.TimeStamp = Convert.ToDateTime(reader["TimeStamp"]);
+                    //NOTE: The only problem about using ADO.NET where we are typing the column names, there is no intellisense that will let you know
+                    //      if it is typed in incorrectly, and the developer can only find out something is wrong until after running the program.
+
+                    //NOTE: After assigning values to the current object, we begin to append each exception entity to our 'Exceptions' list.
+                    Exceptions.Add(exception);
+                }
+                connection.Close();
+                
+            }
+            //NOTE: Here we are returning the 'exceptions' object which is a list of 'ExceptionEntity' objects that will contain our entities
+            //      from our databse as properties.
+            return Exceptions;
         }
 
     }
