@@ -5,7 +5,9 @@ THE TECH ACADEMY PROGRAM
 - The end result won't be a perfect program by any means but it will be a good model of the important part of C#.
  */
 using System;
-using System.IO; //NOTE: This is neede for 'StreamWriter'.
+using System.Data;
+using System.Data.SqlClient; //NOTE: This is neede to connect and disconnect to/from a database.
+using System.IO;
 using Casino;
 using Casino.TwentyOne;
 
@@ -77,17 +79,25 @@ namespace TwentyOne
                     //NOTE: This is an exception we created which inherits the integrated 'Exception' class.
                     //      It is a great way of 'throwing' a custom exception by when a condition is in
                     //      our program is met.
-                    catch (FraudException)
+                    catch (FraudException ex)
                     {
                         Console.WriteLine("Security! Kick this person out.");
+
+                        //NOTE: Here we are calling the method that we created outside of the main method which takes in an exception.
+                        UpdateDbWithException(ex);
+
                         Console.ReadLine();
                         return;
                     }
                     //NOTE: This is the 'Exception' class that will catch any exception if not covered in the 
                     //      TwentyOneGame 'Play()' method.
-                    catch (Exception)
+                    catch (Exception ex)
                     {
                         Console.WriteLine("An error occured. Please contact your System Administrator.");
+
+                        //NOTE: Here we are calling the method that we created outside of the main method which takes in an exception.
+                        UpdateDbWithException(ex);
+
                         Console.ReadLine();
                         return;
                     }
@@ -103,6 +113,78 @@ namespace TwentyOne
             Console.ReadLine();
 
             //NOTE: This is all that the main method is going to have.
+        }
+
+        //NOTE: This method is private because we only want this class (Program) to have access to it, it is 'static' because it is not
+        //      meant for the calling object to be instantiated (we will never instantiate a 'new Program()'), and we don't want
+        //      to return anything (it will simply update the database) thus we are using 'void'.
+        //NOTE: Here this method takes in any of the exceptions because we are passing in an object 'ex' which is of type 'Exception',
+        //      which happens to be C#'s base class for all exceptions. This is a great example of polymorphism.
+        private static void UpdateDbWithException(Exception ex)
+        {
+            //NOTE: What we are doing below is ADO.NET which is part of the system library which deals with database connections.
+            //NOTE: Later we will learn about framworks which are built on top of ADO.NET which will make things even easier.
+            //NOTE: Right now we will use a 'Connection' string that will allow us to connect to the database. For that we must 
+            //      go to the 'SQL Server Object Explorer' window, right click on our 'TwentyOneGame' database, and select
+            //      'Properties'. The 'Properties' window will show up and under 'General', you will see a cell named 'Connection String'.
+            //      The cell to the right of that 'Connection String' will show string:
+            //
+            //      "Data Source=(localdb)\ProjectsV13;Initial Catalog=TwentyOneGame;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
+            //
+            //      We added the '@' character in front of the screen so that it reads the string as is and ignores scape keys.
+
+            string connectionString = @"Data Source=(localdb)\ProjectsV13;Initial Catalog=TwentyOneGame;
+                                        Integrated Security=True;Connect Timeout=30;Encrypt=False;
+                                        TrustServerCertificate=False;ApplicationIntent=ReadWrite;
+                                        MultiSubnetFailover=False";
+
+            //NOTE: Below is our query string.
+            //NOTE: Below we are going to use 'Parameterized Queries' which are used to avoid 'Injection Attacks'.
+            //      Injection Attacks. Injection attacks can be caused by inserting user input directly into a query
+            //      and the user misusing it deliverately for an attack on the system. 'Parameterized Queries' helps
+            //      validate the data that is being entered preventing misuse.
+            string queryString = @"INSERT INTO Exceptions (ExceptionType, ExceptionMessage, TimeStamp) VALUES
+                                    (@ExceptionType, @ExceptionMessage, @TimeStamp)";
+
+            //NOTE: 'using' is a way of controlling 'unmanaged code' or 'unmanaged resources'.  When you are inside of a program in the
+            //      .NET Framwork in the 'Common Language Runtime' and you go outsode of it, to get something else is risky. You are 
+            //      openning up resources which could use memeory (unexpected shut downs). The 'Common Language Runtime' is worried about that.
+            //NOTE: Whenever you open this connections you must always close them and you can achieve that by using keyword, 'using'.
+            //NOTE: The 'using' statement we are using below is different from the 'using' statements above for namespaces. 
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                //NOTE: Here we are creating a 'command' object which takes the query and the connection.
+                SqlCommand command = new SqlCommand(queryString, connection);
+
+                //NOTE: Here we are adding the parameter placeholders and their data types to 'Command'.
+                //NOTE: "@ExceptionType" is a placeholder for one of the parameters, and in 'SqlDbType.VarChar', we are naming its data
+                //      type (VarChar) to protect the SQL code from SQL injections.
+                command.Parameters.Add("@ExceptionType", SqlDbType.VarChar);
+                command.Parameters.Add("@ExceptionMessage", SqlDbType.VarChar);
+                command.Parameters.Add("@TimeStamp", SqlDbType.DateTime);
+
+
+                //NOTE: Here we are adding the Values to the parameter
+
+                //NOTE: Storing a string of the name of the data type of object 'ex'.
+                command.Parameters["@ExceptionType"].Value = ex.GetType().ToString();
+
+                //NOTE: Storing the message of the exception, 'ex' (which is  already of type string). 
+                command.Parameters["@ExceptionMessage"].Value = ex.Message; 
+
+                //NOTE: Storing the date and time when this line gets executed as a DateTime value.
+                command.Parameters["@TimeStamp"].Value = DateTime.Now;
+
+                connection.Open();
+
+                //NOTE: A query would be when you are querying the database, like using a 'SELECT' statement. This  is a non-query because
+                //      we are using an 'INSERT' statement.
+                command.ExecuteNonQuery(); 
+
+                connection.Close();
+            }
+
+
         }
 
     }
