@@ -1,0 +1,31 @@
+﻿@model TechAcadStudentsMVC.Models.Instructor
+@*//NOTE:   To get access to the model passed from the controller, add '@model' to the top of the
+    //        .cshtml file, along with the data type (in our case it is 'Instructor')*@
+
+
+@{
+    ViewBag.Title = "Instructor";
+}
+
+<h2>Instructor</h2>
+
+<h5>
+    Details for Instructor with ID: @ViewBag.Id
+</h5>
+
+<p>
+    Further details about the instructor
+</p>
+
+@*//NOTE: To reference the model passed from the controller, just type '@Model' (don't forget to capitalize it)*@
+<ul>
+    <li>
+        Another Id: @Model.Id
+    </li>
+    <li>
+        First Name: @Model.FirstName
+    </li>
+    <li>
+        Last Name: @Model.LastName
+    </li>
+</ul>

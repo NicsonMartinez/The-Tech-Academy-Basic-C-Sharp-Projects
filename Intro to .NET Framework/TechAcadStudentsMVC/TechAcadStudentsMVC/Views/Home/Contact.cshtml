@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Talk to us"; //NOTE: Multi-line C# starts with the '@' symbol and is sorrounded by curly braces '{}'
+}
+
+
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3> @*//NOTE: Single-Line C# starts with the '@' sign and that's it. Not even a semi-colon at the end.*@ 
+
+<address>
+    310 SW 4th Ave Suite 412<br />
+    Portland, OR 97204<br />
+    <abbr title="Phone">P:</abbr>
+    503.206.6915
+</address>
+
+<address>
+    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+</address>
+
+<small>
+    Contact Information last updated: @DateTime.Now
+<small>
