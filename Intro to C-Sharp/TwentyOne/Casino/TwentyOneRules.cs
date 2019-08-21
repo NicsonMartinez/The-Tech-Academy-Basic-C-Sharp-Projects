@@ -84,12 +84,12 @@ namespace Casino.TwentyOne
                 //      that '20' gets added to the current 'value', which holds the sum of the hand (including that Ace card
                 //      that has a value of 1) and that gets stored back into 'value'. Then that new 'value' value will get stored,
                 //      in that current index in the current iteration (which is the second position in the array) in the  'result'
-                //      array list.
+                //      array.
                 value += (i * 10);
                 result[i] = value;
             }
 
-            //NOTE: Essentially the array list, 'result' in each index, will hold all the possible ways (card sums) you 
+            //NOTE: Essentially the array, 'result' in each index, will hold all the possible ways (card sums) you 
             //      can play with the current hand (considering that there will be more than one way to add the 
             //      cards because of 'Aces'.
             return result;
@@ -100,7 +100,7 @@ namespace Casino.TwentyOne
         public static bool CheckForBlackJack(List<Card> Hand)
         {
             //NOTE: First we call the method 'GetAllPossibleHandValues' (which returns an 
-            //      array list with all the possible ways (card sums) you can play the 'Hand'.
+            //      array with all the possible ways (card sums) you can play the 'Hand'.
             int[] possibleValues = GetAllPossibleHandValues(Hand);
 
             //NOTE: If a player gets a BlackJack, 21 will always be your the highest value in 
@@ -118,7 +118,7 @@ namespace Casino.TwentyOne
         public static bool IsBusted(List<Card> Hand)
         {
             //NOTE: This method takes in a 'Hand' (List of card) then we us the method we created in this class,
-            //      'GetAllPossibleHandValues', and checks if the lowest value in the array list that was returned
+            //      'GetAllPossibleHandValues', and checks if the lowest value in the array that was returned
             //      and store that to int, 'value'.
             int Value = GetAllPossibleHandValues(Hand).Min();
 
